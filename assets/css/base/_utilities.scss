@@ -1,0 +1,74 @@
+.divider {
+	border-bottom: 1px solid $border;
+}
+
+.page-header {
+	text-align: center;
+	margin-bottom: 65px;
+	border-bottom: none;
+
+	.page-title {
+		font-size: 96px;
+		display: inline-block;
+		font-family: $playfair;
+		border-bottom: 3px solid $blue;
+	}
+}
+
+
+.section {
+	@include mq(false, sm){
+		.section-title{
+			font-size: 28px;
+		}
+
+		.section-more-link{
+			font-size: 20px;
+		}
+
+		.section-more{
+			padding-top: 15px;
+			padding-bottom: 0;
+		}
+	}
+
+	&-title {
+		font-size: 42px;
+		font-family: $playfair;
+		margin: 0 0 30px 0;
+	}
+
+	&-more {
+		padding-bottom: 40px;
+
+		&-link {
+			font-size: 22px;
+			color: $blue;
+		}
+	}
+}
+
+.container{
+	//overflow: hidden;
+}
+
+.d-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mt--5{
+	margin-top: -50px;
+}
+
+.mb-6{
+	margin-bottom: 60px;
+}
+
+.mb-5{
+	margin-bottom: 50px;
+}
+
+.pb-6{
+	padding-bottom: 60px;
+}
