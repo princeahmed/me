@@ -1,4 +1,4 @@
-<section id="features-area" data-scroll-index="2">
+<section id="features-area" data-scroll-index="1">
 	<div class="container">
 		<div class="row">
 			<!--start section heading-->

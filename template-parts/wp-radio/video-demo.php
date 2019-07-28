@@ -1,12 +1,12 @@
-<section id="video-area">
+<section id="video-area"  data-scroll-index="3">
 	<div class="container">
 		<div class="row">
 			<!--start section heading-->
 			<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
 				<div class="section-heading text-center">
-					<h5>Video Tutorial</h5>
-					<h2>Watch A Quick Video Tutorial</h2>
-					<p>Learn how to use &amp; setup the WP Radio Plugin. The quick video tutorial coming soon.</p>
+					<h5>Video Demo</h5>
+					<h2>Watch A Quick Video Demo</h2>
+					<p>Watch a qucik video tutorial to learn how to use &amp; setup the WP Radio Plugin. The quick video tutorial coming soon.</p>
 				</div>
 			</div>
 			<!--end section heading-->

@@ -1,4 +1,4 @@
-<section id="product-area" data-scroll-index="3">
+<section id="product-area" data-scroll-index="4">
 	<div class="container">
 		<div class="row">
 			<!--start section heading-->
@@ -12,19 +12,39 @@
 			<!--end section heading-->
 		</div>
 		<div class="row">
-			<!--start product single-->
-			<div class="col-lg-4 col-md-6">
-				<div class="product-single text-center">
-					<div class="prod-img">
-						<h4 class="text-primary font-weight-bold">Purchasing PRO</h4>
-					</div>
-					<div class="prod-details">
-						<h4 class="font-weight-light m-2">Learn how to purchase the WP Radio PRO version.</h4>
-						<a href="#"><i class="icofont-eye-alt"></i> View</a>
-					</div>
-				</div>
-			</div>
-			<!--end product single-->
+
+			<?php
+			$posts = get_posts( array(
+				'post_type'   => 'wpradio_docs',
+				'numberposts' => 6
+			) );
+
+			if ( ! empty( $posts ) ) {
+				foreach ( $posts as $post ) {
+					setup_postdata( $post );
+					?>
+
+					<!--start product single-->
+					<div class="col-lg-4 col-md-6">
+						<div class="product-single text-center">
+							<div class="prod-img">
+								<?php the_title( '<h4 class="text-primary font-weight-bold">', '</h4>' ); ?>
+							</div>
+							<div class="prod-details">
+								<?php
+								$subtitle = get_post_meta( get_the_ID(), 'subtitle', true );
+
+								printf( '<h4 class="font-weight-light m-2">%s</h4>', $subtitle );
+
+								printf( '<a href="%s"><i class="icofont-eye-alt"></i> View</a>', get_permalink() );
+								?>
+							</div>
+						</div>
+					</div>            <!--end product single-->
+
+				<?php }
+				wp_reset_postdata();
+			} ?>
 
 			<!--start product single-->
 			<div class="col-lg-4 col-md-6">
@@ -99,7 +119,7 @@
 
 			<div class="col-lg-12">
 				<div class="load-more-btn text-center">
-					<a href="#"><i class="icofont-eye-alt"></i> View all Documentation</a>
+					<a href="<?php echo get_post_type_archive_link('wpradio_docs'); ?>"><i class="icofont-eye-alt"></i> View all Documentation</a>
 				</div>
 			</div>
 		</div>

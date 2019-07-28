@@ -1,4 +1,4 @@
-<section id="testimonial-area" data-scroll-index="4">
+<section id="testimonial-area" data-scroll-index="5">
 	<div class="container">
 		<div class="row">
 			<!--start heading-->

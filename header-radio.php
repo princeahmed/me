@@ -10,7 +10,7 @@
 	<meta name="apple-mobile-web-app-title" content="<?php bloginfo( 'name' ); ?> - <?php bloginfo( 'description' ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/wpradio/images/favicon.png" />
+	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/vendor/wpradio/images/favicon.png"/>
 	<?php wp_head(); ?>
 	<!--favicon-->
 </head>
@@ -32,7 +32,7 @@
 <header id="header">
 	<div class="container">
 		<nav class="navbar navbar-light navbar-expand-lg justify-content-center">
-			<a class="logo" href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/vendor/wpradio/images/logo.png" alt="logo"></a>
+			<a class="logo" href="<?php echo home_url('wpradio'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/vendor/wpradio/images/logo.png" alt="logo"></a>
 			<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#NavbarContent">
 				<span class="icofont-navigation-menu"></span>
 			</button>
@@ -42,29 +42,27 @@
 						<a class="nav-link active" href="#" data-scroll-nav="0">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="1">About</a>
+						<a class="nav-link" href="#" data-scroll-nav="1">Features</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="2">Features</a>
+						<a class="nav-link" href="#" data-scroll-nav="2">Pricing</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="3">Product</a>
+						<a class="nav-link" href="#" data-scroll-nav="3">Video Demo</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="4">Testimonial</a>
+						<a class="nav-link" href="#" data-scroll-nav="4">Documentation</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="5">Faq</a>
+						<a class="nav-link" href="#" data-scroll-nav="5">Testimonials</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="6">Blog</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-scroll-nav="7">Contact</a>
+						<a class="nav-link" href="#" data-scroll-nav="6">Contact</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav flex-row justify-content-center flex-nowrap download-btn">
-					<li class="nav-item"><a class="nav-link" href="#product-area"><i class="icofont-cart mr-1"></i> Buy Now</a></li>
+					<li class="nav-item">
+						<a class="nav-link" href="#product-area"><i class="icofont-cart mr-1"></i> Buy Now</a></li>
 				</ul>
 			</div>
 		</nav>

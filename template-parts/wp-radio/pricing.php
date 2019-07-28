@@ -99,9 +99,7 @@
 		display: inline-block;
 		text-align: center;
 		font-weight: 600;
-		-webkit-transition: all 0.3s linear;
-		-moz-transition: all 0.3 linear;
-		transition: all 0.3 linear;
+		transition: all 0.3s linear;
 		border-radius: 3px;
 		border: none;
 		font-size: 14px;
@@ -113,8 +111,6 @@
 	}
 
 	.gprice-single .g-button:hover {
-		-webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-		-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 	}
 
@@ -151,13 +147,9 @@
 		left: 0;
 		position: absolute;
 		top: 0;
-		-webkit-transition: all 0.3s linear;
-		-moz-transition: all 0.3 linear;
-		transition: all 0.3 linear;
+		transition: all 0.3s linear;
 		width: 100%;
 		z-index: -1;
-		-webkit-transform: scale(1);
-		-moz-transform: scale(1);
 		transform: scale(1);
 	}
 
@@ -186,8 +178,6 @@
 
 	.gprice-single .g-button.bordered.bg:after {
 		opacity: 0;
-		-webkit-transform: scale(0);
-		-moz-transform: scale(0);
 		transform: scale(0);
 	}
 
@@ -215,15 +205,12 @@
 	====================================*/
 	.g-table1 {
 		overflow: hidden;
-		-webkit-transition: all 0.3s ease;
-		-moz-transition: all 0.3s ease;
 		transition: all 0.3s ease;
 		text-align: center;
 		position: relative;
 		background: #fff;
-		-webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.07);
-		-moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.07);
 		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.07);
+		border-radius: 15px;
 	}
 
 	.g-table1:hover {
@@ -382,7 +369,7 @@
 	====================================*/
 </style>
 
-<section id="why-choose-area">
+<section id="why-choose-area" data-scroll-index="2">
 	<div class="container">
 		<div class="row">
 			<!--end why chosse image-->
