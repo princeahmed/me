@@ -1,7 +1,7 @@
 <?php
 
-//austin setup
-if ( ! function_exists( 'austin_setup' ) ) {
+//prince setup
+if ( ! function_exists( 'prince_setup' ) ) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -9,9 +9,9 @@ if ( ! function_exists( 'austin_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function austin_setup() {
+	function prince_setup() {
 
-		load_theme_textdomain( 'austin', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'prince', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -20,26 +20,13 @@ if ( ! function_exists( 'austin_setup' ) ) {
 
 		add_theme_support( 'post-thumbnails' );
 
-		add_image_size( 'thumbnail-fullwidth', 1245, 615, true );
-		add_image_size( 'thumbnail-medium', 385, 275, true );
-		add_image_size( 'thumbnail-small', 165, 145, true );
-
-		add_image_size( 'event-fullwidth', 865, 500, true );
-
-		add_image_size( 'archive-fullwidth', 815, 425, true );
-		add_image_size( 'archive-medium', 380, 270, true );
-		add_image_size( 'archive-small', 275, 200, true );
-
-		add_image_size( 'thumbnail-xsmall', 135, 130, true );
-
-		add_image_size( 'thumbnail-publication', 275, 355, true );
+		add_image_size( 'thumbnail', 600, 400, true );
 
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary', 'austin' ),
-				'footer'  => __( 'Footer Menu', 'austin' ),
-				'social'  => __( 'Social Links Menu', 'austin' ),
+				'primary' => __( 'Primary', 'prince' ),
+				'footer'  => __( 'Footer Menu', 'prince' ),
 			)
 		);
 
@@ -93,26 +80,26 @@ if ( ! function_exists( 'austin_setup' ) ) {
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Small', 'austin' ),
-					'shortName' => __( 'S', 'austin' ),
+					'name'      => __( 'Small', 'prince' ),
+					'shortName' => __( 'S', 'prince' ),
 					'size'      => 19.5,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => __( 'Normal', 'austin' ),
-					'shortName' => __( 'M', 'austin' ),
+					'name'      => __( 'Normal', 'prince' ),
+					'shortName' => __( 'M', 'prince' ),
 					'size'      => 22,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => __( 'Large', 'austin' ),
-					'shortName' => __( 'L', 'austin' ),
+					'name'      => __( 'Large', 'prince' ),
+					'shortName' => __( 'L', 'prince' ),
 					'size'      => 36.5,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => __( 'Huge', 'austin' ),
-					'shortName' => __( 'XL', 'austin' ),
+					'name'      => __( 'Huge', 'prince' ),
+					'shortName' => __( 'XL', 'prince' ),
 					'size'      => 49.5,
 					'slug'      => 'huge',
 				),
@@ -125,6 +112,6 @@ if ( ! function_exists( 'austin_setup' ) ) {
 	}
 }
 
-add_action( 'after_setup_theme', 'austin_setup' );
+add_action( 'after_setup_theme', 'prince_setup' );
 
 

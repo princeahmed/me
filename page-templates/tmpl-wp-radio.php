@@ -24,7 +24,7 @@ get_header('radio');
 <!--end video area-->
 
 <!--start documentation area-->
-<?php get_template_part('template-parts/wp-radio/documentation'); ?>
+<?php get_template_part('template-parts/wp-radio/docs'); ?>
 <!--end documentation area-->
 
 <!--start newsletter area-->
