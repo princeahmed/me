@@ -1,17 +1,19 @@
 <?php
 
-//prince setup
-if ( ! function_exists( 'prince_setup' ) ) {
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * Note that this function is hooked into the after_setup_theme hook, which
-	 * runs before the init hook. The init hook is too late for some features, such
-	 * as indicating support for post thumbnails.
-	 */
-	function prince_setup() {
+defined('ABSPATH') || die(esc_html__('Direct Access Forbidden'));
 
-		load_theme_textdomain( 'prince', get_template_directory() . '/languages' );
+/**
+ * Sets up theme defaults and registers support for various WordPress features.
+ *
+ * Note that this function is hooked into the after_setup_theme hook, which
+ * runs before the init hook. The init hook is too late for some features, such
+ * as indicating support for post thumbnails.
+ */
+if ( ! function_exists( 'me_setup' ) ) {
+
+	function me_setup() {
+
+		load_theme_textdomain( 'me', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -20,13 +22,10 @@ if ( ! function_exists( 'prince_setup' ) ) {
 
 		add_theme_support( 'post-thumbnails' );
 
-		add_image_size( 'thumbnail', 600, 400, true );
-
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'primary' => __( 'Primary', 'prince' ),
-				'footer'  => __( 'Footer Menu', 'prince' ),
+				'main_menu' => __( 'Main Menu', 'prince' ),
 			)
 		);
 
@@ -112,6 +111,4 @@ if ( ! function_exists( 'prince_setup' ) ) {
 	}
 }
 
-add_action( 'after_setup_theme', 'prince_setup' );
-
-
+add_action( 'after_setup_theme', 'me_setup' );
